@@ -1,0 +1,24 @@
+.navBar {
+  background-color: #00bbff;
+  width: 100%;
+  height: 35px;
+  display: block;
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+  position: relative;
+
+  .buttonWrap {
+    border: none;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    margin: -10px 0 0;
+    padding: 3px;
+    font-size: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+}
