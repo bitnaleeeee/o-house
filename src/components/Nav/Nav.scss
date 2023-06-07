@@ -1,24 +1,83 @@
-.navBar {
-  background-color: #00bbff;
-  width: 100%;
-  height: 35px;
-  display: block;
-  color: #fff;
-  text-align: center;
-  line-height: 35px;
-  position: relative;
+.header {
+  .header_inner {
+    position: relative;
+    width: 1080px;
+    margin: 0 auto;
 
-  .buttonWrap {
-    border: none;
-    background: none;
-    color: white;
-    position: absolute;
-    top: 50%;
-    right: 8px;
-    margin: -10px 0 0;
-    padding: 3px;
-    font-size: 16px;
-    box-sizing: border-box;
-    cursor: pointer;
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .logo_daum {
+      text-align: center;
+      float: left;
+      margin-right: 0;
+
+      .header_start {
+        margin-top: 10px;
+        & > a {
+          font-size: 11px;
+          color: #888;
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+      .header_logo {
+        & > a > img {
+          width: 180px;
+          height: 94px;
+        }
+      }
+    }
+    .search_wrap {
+      float: left;
+      margin: 50px 0 0 40px;
+      .input_wrap {
+        background: url(https://t1.daumcdn.net/daumtop_deco/images/top/2022/rtn/bg_searchbar.png)
+          no-repeat;
+        background-size: 480px;
+        height: 45px;
+        width: 480px;
+        padding: 0 100px 0 5px;
+        box-sizing: border-box;
+        position: relative;
+
+        & > input {
+          background: none;
+          width: 100%;
+          height: 100%;
+          outline: 0;
+          border: none;
+          font-size: 18px;
+          font-weight: 700;
+          margin: 0;
+          padding: 0;
+        }
+        .text_buttons {
+          button {
+            position: absolute;
+            top: 2px;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            border: none;
+          }
+          .keyboard {
+            right: 50px;
+            background: url(https://t1.daumcdn.net/daumtop_deco/images/top/2022/rtn/btn_keyboard.png)
+              no-repeat;
+            background-size: 30px 40px;
+          }
+          .search_bar {
+            right: 10px;
+            background: url(https://t1.daumcdn.net/daumtop_deco/images/top/2022/rtn/btn_search.png)
+              no-repeat;
+            background-size: 30px 40px;
+          }
+        }
+      }
+    }
   }
 }

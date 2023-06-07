@@ -3,32 +3,31 @@ import "./Nav.scss";
 
 function Nav() {
   return (
-    <div>
-      <div className="navBar">
-        첫 구매라면 누구나 최대 2만원 할인받기
-        <button type="button" className="buttonWrap">
-          X
-        </button>
-      </div>
-      <div className="navMenuLeft">
-        <ul>
-          <li>오늘의집</li>
-          <li>커뮤니티</li>
-          <li>쇼핑</li>
-          <li>이사/시공/수리</li>
-        </ul>
-      </div>
+    <div className="header">
+      <div className="header_inner">
+        <div className="logo_daum">
+          <div className="header_start">
+            <a href="#">다음을 시작페이지로</a>
+          </div>
+          <div className="header_logo">
+            <a href="#">
+              <img
+                src="https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png"
+                alt="다음로고"
+              />
+            </a>
+          </div>
+        </div>
 
-      <input type="text" placeholder="통합검색"></input>
-
-      <div className="navMenuRight">
-        <ul>
-          <li>오늘의집</li>
-          <li>로그인</li>
-          <li>회원가입</li>
-          <li>고객센터</li>
-          <li>글쓰기</li>
-        </ul>
+        <div className="search_wrap">
+          <div className="input_wrap">
+            <input type="text" />
+            <div className="text_buttons">
+              <button type="button" className="keyboard"></button>
+              <button type="submit" className="search_bar"></button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
