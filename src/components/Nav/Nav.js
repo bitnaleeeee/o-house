@@ -28,6 +28,14 @@ function Nav() {
             </div>
           </div>
         </div>
+        <div className="header_banner">
+          <a href="#">
+            <img
+              src="https://t1.daumcdn.net/daumtop_chanel/op/20230607014023915.png"
+              alt="해양의날"
+            />
+          </a>
+        </div>
       </div>
     </div>
   );

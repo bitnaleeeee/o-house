@@ -79,5 +79,13 @@
         }
       }
     }
+    .header_banner {
+      float: left;
+      & > a > img {
+        width: 260px;
+        height: 84px;
+        margin: 29px 0 0 50px;
+      }
+    }
   }
 }
