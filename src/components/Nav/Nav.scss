@@ -134,4 +134,97 @@
       }
     }
   }
+  .daum_service {
+    width: 100%;
+    border-bottom: 1px solid #888;
+
+    .inner_service {
+      width: 990px;
+      height: 45px;
+      margin: 0 auto;
+
+      .menu_service {
+        position: relative;
+        &::after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+        ul {
+          display: inline-block;
+          & > a {
+            text-decoration: none;
+
+            & > li {
+              font-size: 14px;
+              margin-right: 15px;
+              display: inline;
+              line-height: 45px;
+              color: #555;
+              font-weight: 600;
+            }
+          }
+        }
+        .link_more {
+          text-decoration: none;
+          font-size: 14px;
+          color: #555;
+          position: absolute;
+          top: 0px;
+          font-weight: 600;
+          right: 367px;
+          line-height: 45px;
+        }
+        .today_inform {
+          float: right;
+          font-size: 14px;
+          margin-right: 15px;
+          display: inline;
+          line-height: 26px;
+          color: #222;
+          font-weight: 600;
+          height: 24px;
+          padding-top: 10px;
+          font-weight: bold;
+          .todaydue {
+            margin-right: 10px;
+          }
+          .todaylocation {
+            position: relative;
+            margin-right: 50px;
+            &::after {
+              content: "";
+              width: 29px;
+              height: 20px;
+              background: url(https://t1.daumcdn.net/daumtop_deco/images/top/2017/rtn/img_weather_170628.png)
+                no-repeat;
+              top: -2px;
+              right: -37px;
+              position: absolute;
+              display: inline-block;
+              background-position: -3px -14px;
+              background-size: 172px 127px;
+            }
+          }
+          .todaytemper {
+            margin-right: 30px;
+            position: relative;
+            &::after {
+              content: "";
+              width: 28px;
+              height: 17px;
+              background: url(https://t1.daumcdn.net/daumtop_deco/images/top/2017/rtn/img_weather_170628.png)
+                no-repeat;
+              top: 0px;
+              right: -26px;
+              position: absolute;
+              display: inline-block;
+              background-position: -314px -81px;
+              background-size: 396px 185px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
